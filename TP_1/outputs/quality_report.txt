@@ -1,0 +1,45 @@
+============================================================
+RAPPORT DE QUALITÉ – Pipeline Météo & Irrigation
+Généré le : 2026-05-29 15:59:22
+============================================================
+
+1. VOLUMÉTRIE
+------------------------------------------------------------
+  Lignes en entrée   : 16
+  Lignes en sortie   : 14
+  Lignes supprimées  : 2
+
+2. DOUBLONS
+------------------------------------------------------------
+  Doublons détectés  : 0
+
+3. VALEURS MANQUANTES (dataset brut)
+------------------------------------------------------------
+  id              :   0 NaN  (  0.0 %)
+  station         :   0 NaN  (  0.0 %)
+  date            :   1 NaN  (  6.2 %)
+  temperature     :   0 NaN  (  0.0 %)
+  humidity        :   1 NaN  (  6.2 %)
+  rain_mm         :   1 NaN  (  6.2 %)
+  wind_kmh        :   0 NaN  (  0.0 %)
+  irrigation      :   0 NaN  (  0.0 %)
+
+4. OUTLIERS DÉTECTÉS (IQR, dataset brut)
+------------------------------------------------------------
+  temperature     :  1 outlier(s) IQR
+  humidity        :  1 outlier(s) IQR
+  rain_mm         :  3 outlier(s) IQR
+  wind_kmh        :  1 outlier(s) IQR
+
+5. STATISTIQUES DESCRIPTIVES (dataset nettoyé)
+------------------------------------------------------------
+  Colonne              Min      Max    Moyenne    Médiane
+  -------------------------------------------------------
+  temperature        18.90    28.30      23.76      23.95
+  humidity           42.00    72.00      58.29      59.00
+  rain_mm             0.00     8.00       1.14       0.00
+  wind_kmh            7.00   150.00      24.29      14.50
+
+============================================================
+FIN DU RAPPORT
+============================================================

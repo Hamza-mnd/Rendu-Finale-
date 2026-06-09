@@ -1,0 +1,27 @@
+2026-05-29 15:59:22 | INFO     | pipeline | ==================================================
+2026-05-29 15:59:22 | INFO     | pipeline | DÉMARRAGE DU PIPELINE
+2026-05-29 15:59:22 | INFO     | pipeline | ==================================================
+2026-05-29 15:59:22 | INFO     | pipeline | EXTRACT : 16 lignes × 8 colonnes chargées depuis 'data/raw/meteo_brut.csv'
+2026-05-29 15:59:22 | DEBUG    | pipeline | Colonnes : ['id', 'station', 'date', 'temperature', 'humidity', 'rain_mm', 'wind_kmh', 'irrigation']
+2026-05-29 15:59:22 | INFO     | pipeline | TRANSFORM : début — 16 lignes
+2026-05-29 15:59:22 | DEBUG    | pipeline |   station : harmonisée en majuscules
+2026-05-29 15:59:22 | DEBUG    | pipeline |   irrigation : toutes les valeurs mappées (ON/OFF)
+2026-05-29 15:59:22 | WARNING  | pipeline |   temperature : 1 valeur(s) non numérique(s) → NaN
+2026-05-29 15:59:22 | WARNING  | pipeline |   date : 1 valeur(s) invalide(s) ou impossible(s) → NaT (ex. format dd/mm/yyyy, 2025-02-30)
+2026-05-29 15:59:22 | DEBUG    | pipeline |   Aucun doublon détecté
+2026-05-29 15:59:22 | WARNING  | pipeline |   temperature : 1 valeur(s) hors [-40, 60] → NaN
+2026-05-29 15:59:22 | WARNING  | pipeline |   humidity : 1 valeur(s) hors [0, 100] → NaN
+2026-05-29 15:59:22 | WARNING  | pipeline |   wind_kmh : 1 outlier(s) IQR détecté(s) — CONSERVÉ(S) (vent de tempête plausible, décision métier)
+2026-05-29 15:59:22 | WARNING  | pipeline |   date : 2 ligne(s) sans date supprimée(s)
+2026-05-29 15:59:22 | INFO     | pipeline |   temperature : 2 NaN imputé(s) par médiane par station
+2026-05-29 15:59:22 | INFO     | pipeline |   humidity : 2 NaN imputé(s) par médiane globale (59.0)
+2026-05-29 15:59:22 | INFO     | pipeline |   rain_mm : 1 NaN imputé(s) par 0.0 (pas de mesure = pas de pluie)
+2026-05-29 15:59:22 | INFO     | pipeline | TRANSFORM : fin — 14 lignes conservées (sur 16)
+2026-05-29 15:59:22 | INFO     | pipeline | Rapport qualité exporté : outputs/quality_report.txt
+2026-05-29 15:59:22 | INFO     | pipeline | BUILD FEATURES : 5 features créées → ['jour_semaine', 'temp_classe', 'irrigation_bin', 'heat_index', 'besoin_arrosage']
+2026-05-29 15:59:22 | INFO     | pipeline | LOAD : meteo_clean.csv exporté (14 lignes) → outputs/meteo_clean.csv
+2026-05-29 15:59:22 | INFO     | pipeline | LOAD : meteo_features.csv exporté (14 lignes, 13 colonnes) → outputs/meteo_features.csv
+2026-05-29 15:59:22 | INFO     | pipeline | ✅ Toutes les assertions passent.
+2026-05-29 15:59:22 | INFO     | pipeline | ==================================================
+2026-05-29 15:59:22 | INFO     | pipeline | PIPELINE TERMINÉ en 0.15 secondes
+2026-05-29 15:59:22 | INFO     | pipeline | ==================================================

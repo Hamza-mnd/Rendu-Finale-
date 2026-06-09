@@ -1,0 +1,9 @@
+[
+  {
+    "event_id": "evt-011",
+    "sensor_id": "sensor_B",
+    "event_time": 1748811300.0,
+    "reason": "too-late",
+    "lateness_s": 360.0
+  }
+]

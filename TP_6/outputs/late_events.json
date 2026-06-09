@@ -1,0 +1,16 @@
+[
+  {
+    "event_id": "evt-007",
+    "sensor_id": "sensor_A",
+    "event_time": 1748811615.0,
+    "reason": "late-accepted",
+    "lateness_s": 20.0
+  },
+  {
+    "event_id": "evt-009",
+    "sensor_id": "sensor_B",
+    "event_time": 1748811608.0,
+    "reason": "late-accepted",
+    "lateness_s": 35.0
+  }
+]

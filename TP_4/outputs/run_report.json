@@ -1,0 +1,42 @@
+{
+  "health.ping": {
+    "total_calls": 2,
+    "error_calls": 0,
+    "avg_latency_ms": 0.0,
+    "p50_latency_ms": 0.0,
+    "max_latency_ms": 0.0,
+    "min_latency_ms": 0.0
+  },
+  "ingest.batch": {
+    "total_calls": 2,
+    "error_calls": 0,
+    "avg_latency_ms": 0.0,
+    "p50_latency_ms": 0.0,
+    "max_latency_ms": 0.0,
+    "min_latency_ms": 0.0
+  },
+  "stats.daily_summary": {
+    "total_calls": 3,
+    "error_calls": 1,
+    "avg_latency_ms": 0.0,
+    "p50_latency_ms": 0.0,
+    "max_latency_ms": 0.0,
+    "min_latency_ms": 0.0
+  },
+  "stats.top_sensors": {
+    "total_calls": 2,
+    "error_calls": 0,
+    "avg_latency_ms": 0.0,
+    "p50_latency_ms": 0.0,
+    "max_latency_ms": 0.0,
+    "min_latency_ms": 0.0
+  },
+  "unknown.method": {
+    "total_calls": 2,
+    "error_calls": 2,
+    "avg_latency_ms": 0.0,
+    "p50_latency_ms": 0.0,
+    "max_latency_ms": 0.0,
+    "min_latency_ms": 0.0
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {"sensor_id": "temp_01", "type": "temperature", "value": 23.5,    "unit": "°C",  "timestamp": "2026-02-23T08:00:00", "pump_status": null, "irrigation_mm": null},
+  {"sensor_id": "hum_01",  "type": "humidity",    "value": 68.2,    "unit": "%",   "timestamp": "2026-02-23T08:00:00", "pump_status": null, "irrigation_mm": null},
+  {"sensor_id": "rain_01", "type": "rainfall",    "value": 12.0,    "unit": "mm",  "timestamp": "2026-02-23T08:00:00", "pump_status": null, "irrigation_mm": null},
+  {"sensor_id": "temp_02", "type": "temperature", "value": -999.0,  "unit": "°C",  "timestamp": "2026-02-23T08:05:00", "pump_status": null, "irrigation_mm": null},
+  {"sensor_id": "",        "type": "humidity",    "value": 55.0,    "unit": "%",   "timestamp": "2026-02-23T08:10:00", "pump_status": null, "irrigation_mm": null},
+  {"sensor_id": "hum_03",  "type": "humidity",    "value": "haute", "unit": "%",   "timestamp": "2026-02-23T08:10:00", "pump_status": null, "irrigation_mm": null},
+  {"sensor_id": "irr_01",  "type": "irrigation",  "value": 5.2,     "unit": "mm",  "timestamp": "2026-02-23T08:15:00", "pump_status": "OFF","irrigation_mm": 5.2},
+  {"sensor_id": "temp_03", "type": "temperature", "value": 19.8,    "unit": "°C",  "timestamp": "not-a-date",          "pump_status": null, "irrigation_mm": null},
+  {"sensor_id": "irr_02",  "type": "irrigation",  "value": 3.1,     "unit": "mm",  "timestamp": "2026-02-23T08:20:00", "pump_status": "ON", "irrigation_mm": 3.1},
+  {"sensor_id": "wind_01", "type": "wind_speed",  "value": 15.4,    "unit": "km/h","timestamp": "2026-02-23T08:25:00", "pump_status": null, "irrigation_mm": null}
+]

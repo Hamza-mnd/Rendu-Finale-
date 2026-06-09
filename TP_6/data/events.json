@@ -1,0 +1,15 @@
+[
+  {"event_id":"evt-001","sensor_id":"sensor_A","site_id":"site_1","event_time":"2025-06-01T10:00:05","temperature_c":22.5,"humidity_pct":65.0,"soil_moisture":0.42},
+  {"event_id":"evt-002","sensor_id":"sensor_B","site_id":"site_1","event_time":"2025-06-01T10:00:12","temperature_c":19.3,"humidity_pct":70.2,"soil_moisture":0.51},
+  {"event_id":"evt-003","sensor_id":"sensor_A","site_id":"site_1","event_time":"2025-06-01T10:00:35","temperature_c":23.1,"humidity_pct":64.8,"soil_moisture":0.40},
+  {"event_id":"evt-004","sensor_id":"sensor_C","site_id":"site_2","event_time":"2025-06-01T10:00:48","temperature_c":25.0,"humidity_pct":55.0,"soil_moisture":0.35},
+  {"event_id":"evt-005","sensor_id":"sensor_A","site_id":"site_1","event_time":"2025-06-01T10:01:10","temperature_c":22.8,"humidity_pct":66.1,"soil_moisture":0.43},
+  {"event_id":"evt-006","sensor_id":"sensor_B","site_id":"site_1","event_time":"2025-06-01T10:01:25","temperature_c":19.8,"humidity_pct":69.5,"soil_moisture":0.50},
+  {"event_id":"evt-007","sensor_id":"sensor_A","site_id":"site_1","event_time":"2025-06-01T10:00:15","temperature_c":22.2,"humidity_pct":65.5,"soil_moisture":0.41},
+  {"event_id":"evt-008","sensor_id":"sensor_C","site_id":"site_2","event_time":"2025-06-01T10:01:40","temperature_c":24.5,"humidity_pct":56.0,"soil_moisture":0.36},
+  {"event_id":"evt-009","sensor_id":"sensor_B","site_id":"site_1","event_time":"2025-06-01T10:00:08","temperature_c":19.0,"humidity_pct":71.0,"soil_moisture":0.52},
+  {"event_id":"evt-010","sensor_id":"sensor_A","site_id":"site_1","event_time":"2025-06-01T10:02:05","temperature_c":23.5,"humidity_pct":63.0,"soil_moisture":0.39},
+  {"event_id":"evt-011","sensor_id":"sensor_B","site_id":"site_1","event_time":"2025-06-01T09:55:00","temperature_c":18.0,"humidity_pct":72.0,"soil_moisture":0.55},
+  {"event_id":"evt-012","sensor_id":"sensor_C","site_id":"site_2","event_time":"2025-06-01T10:02:30","temperature_c":25.2,"humidity_pct":54.5,"soil_moisture":"N/A"},
+  {"event_id":"evt-013","sensor_id":"sensor_A","site_id":"site_1","event_time":"2025-06-01T10:02:55","temperature_c":22.0,"humidity_pct":67.0,"soil_moisture":0.44}
+]

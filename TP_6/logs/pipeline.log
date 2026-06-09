@@ -1,0 +1,50 @@
+2026-05-30 21:23:10,035 [INFO] main: Chargement de 13 événements depuis data/events.json
+2026-05-30 21:23:10,036 [INFO] src.checkpoint: Pas de checkpoint trouvé — démarrage à froid.
+2026-05-30 21:23:10,036 [INFO] src.source: Source: émis evt-001 (event_time=2025-06-01T10:00:05)
+2026-05-30 21:23:10,036 [INFO] main: Pipeline démarré.
+2026-05-30 21:23:10,037 [INFO] src.metrics: [METRICS] elapsed=0.0s | processed=1 | throughput=100.0 evt/s | avg_latency=31404185.04s | backlog=0 | late=0 | dropped=0 | state_keys=1
+2026-05-30 21:23:10,238 [INFO] src.source: Source: émis evt-002 (event_time=2025-06-01T10:00:12)
+2026-05-30 21:23:10,238 [INFO] src.metrics: [METRICS] elapsed=0.2s | processed=2 | throughput=9.9 evt/s | avg_latency=31404181.64s | backlog=0 | late=0 | dropped=0 | state_keys=2
+2026-05-30 21:23:10,439 [INFO] src.source: Source: émis evt-003 (event_time=2025-06-01T10:00:35)
+2026-05-30 21:23:10,439 [INFO] src.metrics: [METRICS] elapsed=0.4s | processed=3 | throughput=7.4 evt/s | avg_latency=31404172.91s | backlog=0 | late=0 | dropped=0 | state_keys=2
+2026-05-30 21:23:10,641 [INFO] src.source: Source: émis evt-004 (event_time=2025-06-01T10:00:48)
+2026-05-30 21:23:10,641 [INFO] src.metrics: [METRICS] elapsed=0.6s | processed=4 | throughput=6.6 evt/s | avg_latency=31404165.34s | backlog=0 | late=0 | dropped=0 | state_keys=3
+2026-05-30 21:23:10,841 [INFO] src.source: Source: émis evt-005 (event_time=2025-06-01T10:01:10)
+2026-05-30 21:23:10,841 [INFO] src.processor: FLUSH window (sensor_A, 1748811600) → avg_temp=22.80 count=2
+2026-05-30 21:23:10,841 [INFO] src.processor: FLUSH window (sensor_B, 1748811600) → avg_temp=19.30 count=1
+2026-05-30 21:23:10,842 [INFO] src.processor: FLUSH window (sensor_C, 1748811600) → avg_temp=25.00 count=1
+2026-05-30 21:23:10,842 [INFO] src.metrics: [METRICS] elapsed=0.8s | processed=5 | throughput=6.2 evt/s | avg_latency=31404156.44s | backlog=0 | late=0 | dropped=0 | state_keys=1
+2026-05-30 21:23:11,044 [INFO] src.source: Source: émis evt-006 (event_time=2025-06-01T10:01:25)
+2026-05-30 21:23:11,044 [INFO] src.metrics: [METRICS] elapsed=1.0s | processed=6 | throughput=5.9 evt/s | avg_latency=31404148.04s | backlog=0 | late=0 | dropped=0 | state_keys=2
+2026-05-30 21:23:11,247 [INFO] src.source: Source: émis evt-007 (event_time=2025-06-01T10:00:15)
+2026-05-30 21:23:11,247 [INFO] src.processor: LATE-ACCEPTED evt-007 | lateness=20s
+2026-05-30 21:23:11,247 [INFO] src.processor: FLUSH window (sensor_A, 1748811600) → avg_temp=22.20 count=1
+2026-05-30 21:23:11,247 [INFO] src.metrics: [METRICS] elapsed=1.2s | processed=7 | throughput=5.8 evt/s | avg_latency=31404152.07s | backlog=0 | late=1 | dropped=0 | state_keys=2
+2026-05-30 21:23:11,447 [INFO] src.source: Source: émis evt-008 (event_time=2025-06-01T10:01:40)
+2026-05-30 21:23:11,447 [INFO] src.metrics: [METRICS] elapsed=1.4s | processed=8 | throughput=5.7 evt/s | avg_latency=31404144.49s | backlog=0 | late=1 | dropped=0 | state_keys=3
+2026-05-30 21:23:11,649 [INFO] src.source: Source: émis evt-009 (event_time=2025-06-01T10:00:08)
+2026-05-30 21:23:11,650 [INFO] src.processor: LATE-ACCEPTED evt-009 | lateness=35s
+2026-05-30 21:23:11,650 [INFO] src.processor: FLUSH window (sensor_B, 1748811600) → avg_temp=19.00 count=1
+2026-05-30 21:23:11,650 [INFO] src.metrics: [METRICS] elapsed=1.6s | processed=9 | throughput=5.6 evt/s | avg_latency=31404148.84s | backlog=0 | late=2 | dropped=0 | state_keys=3
+2026-05-30 21:23:11,850 [INFO] src.source: Source: émis evt-010 (event_time=2025-06-01T10:02:05)
+2026-05-30 21:23:11,851 [INFO] src.processor: FLUSH window (sensor_A, 1748811660) → avg_temp=22.80 count=1
+2026-05-30 21:23:11,851 [INFO] src.processor: FLUSH window (sensor_B, 1748811660) → avg_temp=19.80 count=1
+2026-05-30 21:23:11,852 [INFO] src.processor: FLUSH window (sensor_C, 1748811660) → avg_temp=24.50 count=1
+2026-05-30 21:23:11,852 [INFO] src.metrics: [METRICS] elapsed=1.8s | processed=10 | throughput=5.5 evt/s | avg_latency=31404140.64s | backlog=0 | late=2 | dropped=0 | state_keys=1
+2026-05-30 21:23:12,052 [INFO] src.source: Source: émis evt-011 (event_time=2025-06-01T09:55:00)
+2026-05-30 21:23:12,053 [WARNING] src.processor: DROPPED evt-011 | lateness=360s > allowed=120s
+2026-05-30 21:23:12,053 [INFO] src.metrics: [METRICS] elapsed=2.0s | processed=11 | throughput=5.5 evt/s | avg_latency=31404172.59s | backlog=0 | late=2 | dropped=1 | state_keys=1
+2026-05-30 21:23:12,253 [INFO] src.source: Source: émis evt-012 (event_time=2025-06-01T10:02:30)
+2026-05-30 21:23:12,253 [INFO] src.metrics: [METRICS] elapsed=2.2s | processed=12 | throughput=5.4 evt/s | avg_latency=31404161.73s | backlog=0 | late=2 | dropped=1 | state_keys=2
+2026-05-30 21:23:12,454 [INFO] src.source: Source: émis evt-013 (event_time=2025-06-01T10:02:55)
+2026-05-30 21:23:12,454 [INFO] src.metrics: [METRICS] elapsed=2.4s | processed=13 | throughput=5.4 evt/s | avg_latency=31404150.63s | backlog=0 | late=2 | dropped=1 | state_keys=2
+2026-05-30 21:23:12,655 [INFO] src.source: Source: flux terminé (sentinel envoyé)
+2026-05-30 21:23:12,655 [INFO] main: Sentinel reçu → fin du flux.
+2026-05-30 21:23:12,656 [INFO] main: Flush final des fenêtres restantes (2 clés).
+2026-05-30 21:23:12,658 [INFO] src.sink: Agrégats exportés → outputs/aggregates.csv (10 lignes)
+2026-05-30 21:23:12,661 [INFO] src.sink: JSON exporté → outputs/late_events.json
+2026-05-30 21:23:12,663 [INFO] src.sink: JSON exporté → outputs/dropped_events.json
+2026-05-30 21:23:12,666 [INFO] src.sink: JSON exporté → outputs/run_report.json
+2026-05-30 21:23:12,667 [INFO] src.sink: Rapport run exporté → outputs/run_report.json
+2026-05-30 21:23:12,669 [INFO] src.checkpoint: Checkpoint sauvegardé → checkpoints/state.json (0 clés)
+2026-05-30 21:23:12,673 [INFO] main: Pipeline terminé avec succès.

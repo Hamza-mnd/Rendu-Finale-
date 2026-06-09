@@ -1,0 +1,13 @@
+{"event_id": "e-ca98fe3d", "sensor_id": "sensor-03", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:14", "temperature_c": 24.35, "humidity_pct": 53.06}
+{"event_id": "e-72fefbc0", "sensor_id": "sensor-07", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:15", "temperature_c": 23.41, "humidity_pct": 58.54}
+{"event_id": "e-74877a55", "sensor_id": "sensor-07", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:15", "temperature_c": 23.19, "humidity_pct": 54.55}
+{"event_id": "e-a29b226d", "sensor_id": "sensor-07", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:16", "temperature_c": 27.29, "humidity_pct": 57.95}
+{"event_id": "e-d1fb30d6", "sensor_id": "sensor-07", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:16", "temperature_c": 19.83, "humidity_pct": 51.1}
+{"event_id": "e-b795dbd2", "sensor_id": "sensor-03", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:22", "temperature_c": 21.12, "humidity_pct": 64.51}
+{"event_id": "e-2814757e", "sensor_id": "sensor-07", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:23", "temperature_c": 27.62, "humidity_pct": 48.02}
+{"event_id": "e-41ccabcf", "sensor_id": "sensor-07", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:25", "temperature_c": 19.66, "humidity_pct": 61.47}
+{"event_id": "e-ba9ba87b", "sensor_id": "sensor-07", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:34", "temperature_c": 18.25, "humidity_pct": 52.77}
+{"event_id": "e-b1e0e7f7", "sensor_id": "sensor-03", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:36", "temperature_c": 22.88, "humidity_pct": 48.82}
+{"event_id": "e-5c6a32ab", "sensor_id": "sensor-07", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:38", "temperature_c": 25.07, "humidity_pct": 61.29}
+{"event_id": "e-4937a50a", "sensor_id": "sensor-07", "site_id": "SITE-04", "event_time": "2026-05-31T21:15:39", "temperature_c": 22.78, "humidity_pct": 64.42}
+{"event_id": "e-0c1e3fcd", "sensor_id": "sensor-07", "site_id": "SITE-04", "event_time": "2026-05-31T21:16:36", "temperature_c": 23.03, "humidity_pct": 50.61}

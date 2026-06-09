@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Séance 7 — run par défaut",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run.py",
+      "args": ["--partitions", "4", "--consumers", "2", "--duration", "30"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Séance 7 — skew (clé site_id)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run.py",
+      "args": ["--key-field", "site_id", "--partitions", "4", "--consumers", "4", "--duration", "30"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Séance 7 — consumer lent (lag visible)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run.py",
+      "args": ["--consumer-delay", "100", "--producer-rate", "20", "--duration", "20"],
+      "console": "integratedTerminal"
+    }
+  ]
+}
