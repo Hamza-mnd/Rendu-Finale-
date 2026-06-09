@@ -1,0 +1,147 @@
+2026-05-31 16:59:04,001 [INFO] main :: === Démarrage Séance 8 — Plateforme livraison ===
+2026-05-31 16:59:04,005 [INFO] consumer_a :: [A] démarrage — partitions : [0, 2]
+2026-05-31 16:59:04,006 [INFO] consumer_b :: [B] démarrage — partitions : [1, 3]
+2026-05-31 16:59:04,007 [INFO] main :: Partitions A=[0, 2] B=[1, 3]
+2026-05-31 16:59:04,007 [INFO] main :: --- Phase 1 : prise de commandes ---
+2026-05-31 16:59:04,008 [INFO] order_service :: Commande créée : ORD-20260601-00AC (ville=Fes, montant=245.00)
+2026-05-31 16:59:04,009 [INFO] order_service :: Événement publié → partition=3 offset=0
+2026-05-31 16:59:04,060 [INFO] order_service :: Commande créée : ORD-20260601-EEC2 (ville=Casablanca, montant=890.50)
+2026-05-31 16:59:04,060 [INFO] order_service :: Événement publié → partition=1 offset=0
+2026-05-31 16:59:04,112 [INFO] order_service :: Commande créée : ORD-20260601-CDE3 (ville=Rabat, montant=120.00)
+2026-05-31 16:59:04,112 [INFO] order_service :: Événement publié → partition=2 offset=0
+2026-05-31 16:59:04,163 [INFO] order_service :: Commande créée : ORD-20260601-387C (ville=Fes, montant=550.00)
+2026-05-31 16:59:04,163 [INFO] order_service :: Événement publié → partition=3 offset=1
+2026-05-31 16:59:04,214 [INFO] order_service :: Commande créée : ORD-20260601-E1D0 (ville=Marrakech, montant=175.00)
+2026-05-31 16:59:04,214 [INFO] order_service :: Événement publié → partition=0 offset=0
+2026-05-31 16:59:04,265 [INFO] order_service :: Commande créée : ORD-20260601-0853 (ville=Tanger, montant=310.00)
+2026-05-31 16:59:04,265 [INFO] order_service :: Événement publié → partition=3 offset=2
+2026-05-31 16:59:04,316 [INFO] order_service :: Commande créée : ORD-20260601-2053 (ville=Casablanca, montant=430.00)
+2026-05-31 16:59:04,316 [INFO] order_service :: Événement publié → partition=1 offset=1
+2026-05-31 16:59:04,368 [INFO] order_service :: Commande créée : ORD-20260601-2752 (ville=Rabat, montant=95.00)
+2026-05-31 16:59:04,368 [INFO] order_service :: Événement publié → partition=2 offset=1
+2026-05-31 16:59:04,419 [WARNING] order_service :: Validation échouée : Ville inconnue : 'InvalidCity'. Villes autorisées : {'Casablanca', 'Fes', 'Rabat', 'Tanger', 'Marrakech'}
+2026-05-31 16:59:04,470 [WARNING] order_service :: Validation échouée : Le montant doit être strictement positif, reçu : -50.0
+2026-05-31 16:59:04,521 [INFO] main :: --- Phase 2 : simulation des cycles de vie ---
+2026-05-31 16:59:04,521 [INFO] producer :: [PRODUCER] order_cancelled → order=ORD-20260601-00AC city=Fes partition=3 offset=3
+2026-05-31 16:59:04,622 [INFO] producer :: [PRODUCER] order_cancelled → order=ORD-20260601-EEC2 city=Casablanca partition=1 offset=2
+2026-05-31 16:59:04,730 [INFO] producer :: [PRODUCER] order_created → order=ORD-20260601-CDE3 city=Rabat partition=2 offset=2
+2026-05-31 16:59:04,795 [INFO] producer :: [PRODUCER] order_confirmed → order=ORD-20260601-CDE3 city=Rabat partition=2 offset=3
+2026-05-31 16:59:04,846 [INFO] producer :: [PRODUCER] order_prepared → order=ORD-20260601-CDE3 city=Rabat partition=2 offset=4
+2026-05-31 16:59:04,897 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260601-CDE3 city=Rabat partition=2 offset=5
+2026-05-31 16:59:04,948 [INFO] producer :: [PRODUCER] order_delivered → order=ORD-20260601-CDE3 city=Rabat partition=2 offset=6
+2026-05-31 16:59:05,099 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260601-387C city=Fes partition=3 offset=4
+2026-05-31 16:59:05,099 [INFO] producer :: [PRODUCER] delivery_failed → order=ORD-20260601-387C city=Fes partition=3 offset=5
+2026-05-31 16:59:05,200 [INFO] producer :: [PRODUCER] order_cancelled → order=ORD-20260601-E1D0 city=Marrakech partition=0 offset=1
+2026-05-31 16:59:05,300 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260601-0853 city=Tanger partition=3 offset=6
+2026-05-31 16:59:05,300 [INFO] producer :: [PRODUCER] delivery_failed → order=ORD-20260601-0853 city=Tanger partition=3 offset=7
+2026-05-31 16:59:05,402 [INFO] main :: Pipeline en cours — attente 30s…
+2026-05-31 16:59:21,500 [WARNING] main :: Interruption clavier — arrêt propre…
+2026-05-31 16:59:21,536 [INFO] consumer_a :: [A] arrêt propre
+2026-05-31 16:59:21,536 [INFO] consumer_b :: [B] arrêt propre
+2026-05-31 16:59:21,538 [INFO] main :: Broker final : {0: 2, 1: 3, 2: 7, 3: 8}
+2026-05-31 16:59:21,538 [INFO] main :: Offsets A : {'group-a': {'2': 7, '0': 2}}
+2026-05-31 16:59:21,539 [INFO] main :: Offsets B : {'group-b': {'3': 8, '1': 3}}
+2026-05-31 16:59:21,539 [INFO] main :: === Pipeline arrêté ===
+2026-05-31 16:59:22,096 [INFO] main :: === Démarrage Séance 8 — Plateforme livraison ===
+2026-05-31 16:59:22,125 [INFO] consumer_a :: [A] démarrage — partitions : [0, 2]
+2026-05-31 16:59:22,126 [INFO] consumer_b :: [B] démarrage — partitions : [1, 3]
+2026-05-31 16:59:22,127 [INFO] main :: Partitions A=[0, 2] B=[1, 3]
+2026-05-31 16:59:22,127 [INFO] main :: --- Phase 1 : prise de commandes ---
+2026-05-31 16:59:22,127 [INFO] order_service :: Commande créée : ORD-20260601-29B1 (ville=Fes, montant=245.00)
+2026-05-31 16:59:22,128 [INFO] order_service :: Événement publié → partition=3 offset=0
+2026-05-31 16:59:22,179 [INFO] order_service :: Commande créée : ORD-20260601-4A6B (ville=Casablanca, montant=890.50)
+2026-05-31 16:59:22,179 [INFO] order_service :: Événement publié → partition=1 offset=0
+2026-05-31 16:59:22,231 [INFO] order_service :: Commande créée : ORD-20260601-8861 (ville=Rabat, montant=120.00)
+2026-05-31 16:59:22,231 [INFO] order_service :: Événement publié → partition=2 offset=0
+2026-05-31 16:59:22,282 [INFO] order_service :: Commande créée : ORD-20260601-EA37 (ville=Fes, montant=550.00)
+2026-05-31 16:59:22,282 [INFO] order_service :: Événement publié → partition=3 offset=1
+2026-05-31 16:59:22,333 [INFO] order_service :: Commande créée : ORD-20260601-33A0 (ville=Marrakech, montant=175.00)
+2026-05-31 16:59:22,334 [INFO] order_service :: Événement publié → partition=0 offset=0
+2026-05-31 16:59:22,385 [INFO] order_service :: Commande créée : ORD-20260601-E880 (ville=Tanger, montant=310.00)
+2026-05-31 16:59:22,385 [INFO] order_service :: Événement publié → partition=3 offset=2
+2026-05-31 16:59:22,436 [INFO] order_service :: Commande créée : ORD-20260601-E7A7 (ville=Casablanca, montant=430.00)
+2026-05-31 16:59:22,436 [INFO] order_service :: Événement publié → partition=1 offset=1
+2026-05-31 16:59:22,487 [INFO] order_service :: Commande créée : ORD-20260601-EAF1 (ville=Rabat, montant=95.00)
+2026-05-31 16:59:22,487 [INFO] order_service :: Événement publié → partition=2 offset=1
+2026-05-31 16:59:22,538 [WARNING] order_service :: Validation échouée : Ville inconnue : 'InvalidCity'. Villes autorisées : {'Fes', 'Rabat', 'Tanger', 'Casablanca', 'Marrakech'}
+2026-05-31 16:59:22,589 [WARNING] order_service :: Validation échouée : Le montant doit être strictement positif, reçu : -50.0
+2026-05-31 16:59:22,640 [INFO] main :: --- Phase 2 : simulation des cycles de vie ---
+2026-05-31 16:59:22,640 [INFO] producer :: [PRODUCER] order_created → order=ORD-20260601-29B1 city=Fes partition=3 offset=3
+2026-05-31 16:59:22,691 [INFO] producer :: [PRODUCER] order_confirmed → order=ORD-20260601-29B1 city=Fes partition=3 offset=4
+2026-05-31 16:59:22,742 [INFO] producer :: [PRODUCER] order_prepared → order=ORD-20260601-29B1 city=Fes partition=3 offset=5
+2026-05-31 16:59:22,793 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260601-29B1 city=Fes partition=3 offset=6
+2026-05-31 16:59:22,844 [INFO] producer :: [PRODUCER] order_delivered → order=ORD-20260601-29B1 city=Fes partition=3 offset=7
+2026-05-31 16:59:22,995 [INFO] producer :: [PRODUCER] order_created → order=ORD-20260601-4A6B city=Casablanca partition=1 offset=2
+2026-05-31 16:59:23,046 [INFO] producer :: [PRODUCER] order_confirmed → order=ORD-20260601-4A6B city=Casablanca partition=1 offset=3
+2026-05-31 16:59:23,097 [INFO] producer :: [PRODUCER] order_prepared → order=ORD-20260601-4A6B city=Casablanca partition=1 offset=4
+2026-05-31 16:59:23,148 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260601-4A6B city=Casablanca partition=1 offset=5
+2026-05-31 16:59:23,199 [INFO] producer :: [PRODUCER] order_delivered → order=ORD-20260601-4A6B city=Casablanca partition=1 offset=6
+2026-05-31 16:59:23,350 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260601-8861 city=Rabat partition=2 offset=2
+2026-05-31 16:59:23,350 [INFO] producer :: [PRODUCER] delivery_failed → order=ORD-20260601-8861 city=Rabat partition=2 offset=3
+2026-05-31 16:59:23,451 [INFO] producer :: [PRODUCER] order_cancelled → order=ORD-20260601-EA37 city=Fes partition=3 offset=8
+2026-05-31 16:59:23,552 [INFO] producer :: [PRODUCER] order_created → order=ORD-20260601-33A0 city=Marrakech partition=0 offset=1
+2026-05-31 16:59:23,603 [INFO] producer :: [PRODUCER] order_confirmed → order=ORD-20260601-33A0 city=Marrakech partition=0 offset=2
+2026-05-31 16:59:23,654 [INFO] producer :: [PRODUCER] order_prepared → order=ORD-20260601-33A0 city=Marrakech partition=0 offset=3
+2026-05-31 16:59:23,705 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260601-33A0 city=Marrakech partition=0 offset=4
+2026-05-31 16:59:23,756 [INFO] producer :: [PRODUCER] order_delivered → order=ORD-20260601-33A0 city=Marrakech partition=0 offset=5
+2026-05-31 16:59:23,907 [INFO] producer :: [PRODUCER] order_created → order=ORD-20260601-E880 city=Tanger partition=3 offset=9
+2026-05-31 16:59:23,958 [INFO] producer :: [PRODUCER] order_confirmed → order=ORD-20260601-E880 city=Tanger partition=3 offset=10
+2026-05-31 16:59:24,009 [INFO] producer :: [PRODUCER] order_prepared → order=ORD-20260601-E880 city=Tanger partition=3 offset=11
+2026-05-31 16:59:24,060 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260601-E880 city=Tanger partition=3 offset=12
+2026-05-31 16:59:24,111 [INFO] producer :: [PRODUCER] order_delivered → order=ORD-20260601-E880 city=Tanger partition=3 offset=13
+2026-05-31 16:59:24,263 [INFO] main :: Pipeline en cours — attente 30s…
+2026-05-31 16:59:54,297 [INFO] consumer_b :: [B] arrêt propre
+2026-05-31 16:59:54,314 [INFO] consumer_a :: [A] arrêt propre
+2026-05-31 16:59:54,316 [INFO] main :: Broker final : {0: 6, 1: 7, 2: 4, 3: 14}
+2026-05-31 16:59:54,316 [INFO] main :: Offsets A : {'group-a': {'2': 7, '0': 6}}
+2026-05-31 16:59:54,316 [INFO] main :: Offsets B : {'group-b': {'3': 14, '1': 7}}
+2026-05-31 16:59:54,316 [INFO] main :: === Pipeline arrêté ===
+2026-06-02 08:42:12,852 [INFO] main :: === Démarrage Séance 8 — Plateforme livraison ===
+2026-06-02 08:42:12,874 [INFO] consumer_a :: [A] démarrage — partitions : [0, 2]
+2026-06-02 08:42:12,876 [INFO] consumer_b :: [B] démarrage — partitions : [1, 3]
+2026-06-02 08:42:12,876 [INFO] main :: Partitions A=[0, 2] B=[1, 3]
+2026-06-02 08:42:12,876 [INFO] main :: --- Phase 1 : prise de commandes ---
+2026-06-02 08:42:12,877 [INFO] order_service :: Commande créée : ORD-20260602-5441 (ville=Fes, montant=245.00)
+2026-06-02 08:42:12,879 [INFO] order_service :: Événement publié → partition=3 offset=0
+2026-06-02 08:42:12,929 [INFO] order_service :: Commande créée : ORD-20260602-D370 (ville=Casablanca, montant=890.50)
+2026-06-02 08:42:12,929 [INFO] order_service :: Événement publié → partition=1 offset=0
+2026-06-02 08:42:12,980 [INFO] order_service :: Commande créée : ORD-20260602-24BF (ville=Rabat, montant=120.00)
+2026-06-02 08:42:12,981 [INFO] order_service :: Événement publié → partition=2 offset=0
+2026-06-02 08:42:13,032 [INFO] order_service :: Commande créée : ORD-20260602-77C3 (ville=Fes, montant=550.00)
+2026-06-02 08:42:13,032 [INFO] order_service :: Événement publié → partition=3 offset=1
+2026-06-02 08:42:13,084 [INFO] order_service :: Commande créée : ORD-20260602-ADC3 (ville=Marrakech, montant=175.00)
+2026-06-02 08:42:13,084 [INFO] order_service :: Événement publié → partition=0 offset=0
+2026-06-02 08:42:13,134 [INFO] order_service :: Commande créée : ORD-20260602-1133 (ville=Tanger, montant=310.00)
+2026-06-02 08:42:13,135 [INFO] order_service :: Événement publié → partition=3 offset=2
+2026-06-02 08:42:13,186 [INFO] order_service :: Commande créée : ORD-20260602-010A (ville=Casablanca, montant=430.00)
+2026-06-02 08:42:13,186 [INFO] order_service :: Événement publié → partition=1 offset=1
+2026-06-02 08:42:13,237 [INFO] order_service :: Commande créée : ORD-20260602-EC5C (ville=Rabat, montant=95.00)
+2026-06-02 08:42:13,237 [INFO] order_service :: Événement publié → partition=2 offset=1
+2026-06-02 08:42:13,289 [WARNING] order_service :: Validation échouée : Ville inconnue : 'InvalidCity'. Villes autorisées : {'Fes', 'Marrakech', 'Rabat', 'Tanger', 'Casablanca'}
+2026-06-02 08:42:13,340 [WARNING] order_service :: Validation échouée : Le montant doit être strictement positif, reçu : -50.0
+2026-06-02 08:42:13,390 [INFO] main :: --- Phase 2 : simulation des cycles de vie ---
+2026-06-02 08:42:13,390 [INFO] producer :: [PRODUCER] order_created → order=ORD-20260602-5441 city=Fes partition=3 offset=3
+2026-06-02 08:42:13,441 [INFO] producer :: [PRODUCER] order_confirmed → order=ORD-20260602-5441 city=Fes partition=3 offset=4
+2026-06-02 08:42:13,492 [INFO] producer :: [PRODUCER] order_prepared → order=ORD-20260602-5441 city=Fes partition=3 offset=5
+2026-06-02 08:42:13,543 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260602-5441 city=Fes partition=3 offset=6
+2026-06-02 08:42:13,594 [INFO] producer :: [PRODUCER] order_delivered → order=ORD-20260602-5441 city=Fes partition=3 offset=7
+2026-06-02 08:42:13,744 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260602-D370 city=Casablanca partition=1 offset=2
+2026-06-02 08:42:13,744 [INFO] producer :: [PRODUCER] delivery_failed → order=ORD-20260602-D370 city=Casablanca partition=1 offset=3
+2026-06-02 08:42:13,845 [INFO] producer :: [PRODUCER] order_created → order=ORD-20260602-24BF city=Rabat partition=2 offset=2
+2026-06-02 08:42:13,896 [INFO] producer :: [PRODUCER] order_confirmed → order=ORD-20260602-24BF city=Rabat partition=2 offset=3
+2026-06-02 08:42:13,946 [INFO] producer :: [PRODUCER] order_prepared → order=ORD-20260602-24BF city=Rabat partition=2 offset=4
+2026-06-02 08:42:13,997 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260602-24BF city=Rabat partition=2 offset=5
+2026-06-02 08:42:14,048 [INFO] producer :: [PRODUCER] order_delivered → order=ORD-20260602-24BF city=Rabat partition=2 offset=6
+2026-06-02 08:42:14,199 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260602-77C3 city=Fes partition=3 offset=8
+2026-06-02 08:42:14,199 [INFO] producer :: [PRODUCER] delivery_failed → order=ORD-20260602-77C3 city=Fes partition=3 offset=9
+2026-06-02 08:42:14,299 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260602-ADC3 city=Marrakech partition=0 offset=1
+2026-06-02 08:42:14,300 [INFO] producer :: [PRODUCER] delivery_failed → order=ORD-20260602-ADC3 city=Marrakech partition=0 offset=2
+2026-06-02 08:42:14,401 [INFO] producer :: [PRODUCER] order_dispatched → order=ORD-20260602-1133 city=Tanger partition=3 offset=10
+2026-06-02 08:42:14,401 [INFO] producer :: [PRODUCER] delivery_failed → order=ORD-20260602-1133 city=Tanger partition=3 offset=11
+2026-06-02 08:42:14,502 [INFO] main :: Pipeline en cours — attente 30s…
+2026-06-02 08:42:44,555 [INFO] consumer_a :: [A] arrêt propre
+2026-06-02 08:42:44,555 [INFO] consumer_b :: [B] arrêt propre
+2026-06-02 08:42:44,558 [INFO] main :: Broker final : {0: 3, 1: 4, 2: 7, 3: 12}
+2026-06-02 08:42:44,558 [INFO] main :: Offsets A : {'group-a': {'2': 7, '0': 6}}
+2026-06-02 08:42:44,558 [INFO] main :: Offsets B : {'group-b': {'3': 14, '1': 7}}
+2026-06-02 08:42:44,558 [INFO] main :: === Pipeline arrêté ===
