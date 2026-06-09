@@ -1,0 +1,12 @@
+# Dépendances de la plateforme de livraison avec assistant IA
+
+# API Groq (via client OpenAI compatible)
+openai>=1.0.0
+
+# Chargement des variables d'environnement (.env)
+python-dotenv>=1.0.0
+
+# Interface graphique (inclus dans Python standard)
+# tkinter — déjà inclus dans Python 3.x sur Windows/macOS/Linux
+
+# Tout le reste utilise la bibliothèque standard Python

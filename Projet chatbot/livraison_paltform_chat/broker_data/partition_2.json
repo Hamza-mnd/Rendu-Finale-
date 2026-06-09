@@ -1,0 +1,144 @@
+[
+  {
+    "event_id": "EVT-1781006004-d70374d7",
+    "order_id": "ORD-20260609-0002",
+    "event_type": "order_created",
+    "event_time": "2026-06-09T00:53:24.626406",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "city": "Casablanca",
+    "zone": "Maarif",
+    "amount": 890.5,
+    "items_count": 5,
+    "status": "created",
+    "_broker_metadata": {
+      "partition": 2,
+      "offset": 0,
+      "timestamp": "2026-06-09T00:53:24.626406"
+    }
+  },
+  {
+    "event_id": "EVT-1781006004-a94bf1c5",
+    "order_id": "ORD-20260609-0002",
+    "event_type": "order_confirmed",
+    "event_time": "2026-06-09T00:53:24.928801",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "_broker_metadata": {
+      "partition": 2,
+      "offset": 1,
+      "timestamp": "2026-06-09T00:53:24.928801"
+    }
+  },
+  {
+    "event_id": "EVT-1781006005-42070616",
+    "order_id": "ORD-20260609-0002",
+    "event_type": "order_prepared",
+    "event_time": "2026-06-09T00:53:25.230826",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "_broker_metadata": {
+      "partition": 2,
+      "offset": 2,
+      "timestamp": "2026-06-09T00:53:25.230826"
+    }
+  },
+  {
+    "event_id": "EVT-1781006005-1e3522c6",
+    "order_id": "ORD-20260609-0002",
+    "event_type": "order_dispatched",
+    "event_time": "2026-06-09T00:53:25.533126",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "_broker_metadata": {
+      "partition": 2,
+      "offset": 3,
+      "timestamp": "2026-06-09T00:53:25.533126"
+    }
+  },
+  {
+    "event_id": "EVT-1781006005-d9e56d6c",
+    "order_id": "ORD-20260609-0002",
+    "event_type": "order_delivered",
+    "event_time": "2026-06-09T00:53:25.834652",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "amount": 890.5,
+    "_broker_metadata": {
+      "partition": 2,
+      "offset": 4,
+      "timestamp": "2026-06-09T00:53:25.834652"
+    }
+  },
+  {
+    "event_id": "EVT-1781006007-69a703e2",
+    "order_id": "ORD-20260609-0004",
+    "event_type": "order_created",
+    "event_time": "2026-06-09T00:53:27.454103",
+    "partition_key": "Marrakech",
+    "courier_id": "CRR-04",
+    "city": "Marrakech",
+    "zone": "Guéliz",
+    "amount": 550.0,
+    "items_count": 3,
+    "status": "created",
+    "_broker_metadata": {
+      "partition": 2,
+      "offset": 5,
+      "timestamp": "2026-06-09T00:53:27.454103"
+    }
+  },
+  {
+    "event_id": "EVT-1781006007-e1332a45",
+    "order_id": "ORD-20260609-0004",
+    "event_type": "order_confirmed",
+    "event_time": "2026-06-09T00:53:27.756554",
+    "partition_key": "Marrakech",
+    "courier_id": "CRR-04",
+    "_broker_metadata": {
+      "partition": 2,
+      "offset": 6,
+      "timestamp": "2026-06-09T00:53:27.756554"
+    }
+  },
+  {
+    "event_id": "EVT-1781006008-e6b8cfd7",
+    "order_id": "ORD-20260609-0004",
+    "event_type": "order_prepared",
+    "event_time": "2026-06-09T00:53:28.058312",
+    "partition_key": "Marrakech",
+    "courier_id": "CRR-04",
+    "_broker_metadata": {
+      "partition": 2,
+      "offset": 7,
+      "timestamp": "2026-06-09T00:53:28.058312"
+    }
+  },
+  {
+    "event_id": "EVT-1781006008-5f09875f",
+    "order_id": "ORD-20260609-0004",
+    "event_type": "order_dispatched",
+    "event_time": "2026-06-09T00:53:28.360317",
+    "partition_key": "Marrakech",
+    "courier_id": "CRR-04",
+    "_broker_metadata": {
+      "partition": 2,
+      "offset": 8,
+      "timestamp": "2026-06-09T00:53:28.360317"
+    }
+  },
+  {
+    "event_id": "EVT-1781006008-9518c578",
+    "order_id": "ORD-20260609-0004",
+    "event_type": "delivery_failed",
+    "event_time": "2026-06-09T00:53:28.662397",
+    "partition_key": "Marrakech",
+    "failure_reason": "Adresse incorrecte",
+    "courier_id": "CRR-04",
+    "_broker_metadata": {
+      "partition": 2,
+      "offset": 9,
+      "timestamp": "2026-06-09T00:53:28.662397"
+    }
+  }
+]

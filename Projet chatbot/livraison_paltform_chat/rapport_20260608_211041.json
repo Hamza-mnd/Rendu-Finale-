@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-06-08T21:10:41.462561",
+  "indicators": {
+    "consumer_a": {
+      "by_city": {
+        "Marrakech": {
+          "order_created": 1,
+          "order_confirmed": 1,
+          "order_prepared": 1,
+          "order_dispatched": 1,
+          "delivery_failed": 1
+        }
+      },
+      "total_created": 1,
+      "total_delivered": 0,
+      "total_failed": 1,
+      "total_cancelled": 0,
+      "success_rate": 0.0,
+      "backlog": 1
+    },
+    "consumer_b": {
+      "total_deliveries": 3,
+      "total_failures": 1,
+      "couriers": {
+        "CRR-01": {
+          "deliveries": 1,
+          "failures": 0,
+          "total_amount": 245.0,
+          "cities": [
+            "Fes"
+          ],
+          "success_rate": 100.0
+        },
+        "CRR-02": {
+          "deliveries": 1,
+          "failures": 0,
+          "total_amount": 890.5,
+          "cities": [
+            "Casablanca"
+          ],
+          "success_rate": 100.0
+        },
+        "CRR-03": {
+          "deliveries": 1,
+          "failures": 0,
+          "total_amount": 120.0,
+          "cities": [
+            "Rabat"
+          ],
+          "success_rate": 100.0
+        },
+        "CRR-05": {
+          "deliveries": 0,
+          "failures": 1,
+          "total_amount": 0.0,
+          "cities": [],
+          "success_rate": 0.0
+        }
+      }
+    }
+  }
+}

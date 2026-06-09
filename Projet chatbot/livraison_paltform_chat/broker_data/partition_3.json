@@ -1,0 +1,428 @@
+[
+  {
+    "event_id": "EVT-1781005859-485dc998",
+    "order_id": "ORD-20260609-0001",
+    "event_type": "order_created",
+    "event_time": "2026-06-09T00:50:59.564823",
+    "partition_key": "Fes",
+    "courier_id": "CRR-01",
+    "city": "Fes",
+    "zone": "Saiss",
+    "amount": 245.0,
+    "items_count": 2,
+    "status": "created",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 0,
+      "timestamp": "2026-06-09T00:50:59.564823"
+    }
+  },
+  {
+    "event_id": "EVT-1781005859-d78709dd",
+    "order_id": "ORD-20260609-0001",
+    "event_type": "order_confirmed",
+    "event_time": "2026-06-09T00:50:59.868466",
+    "partition_key": "Fes",
+    "courier_id": "CRR-01",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 1,
+      "timestamp": "2026-06-09T00:50:59.868466"
+    }
+  },
+  {
+    "event_id": "EVT-1781005860-e9c96ce0",
+    "order_id": "ORD-20260609-0001",
+    "event_type": "order_prepared",
+    "event_time": "2026-06-09T00:51:00.170878",
+    "partition_key": "Fes",
+    "courier_id": "CRR-01",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 2,
+      "timestamp": "2026-06-09T00:51:00.170878"
+    }
+  },
+  {
+    "event_id": "EVT-1781005860-a86453e1",
+    "order_id": "ORD-20260609-0001",
+    "event_type": "order_dispatched",
+    "event_time": "2026-06-09T00:51:00.472978",
+    "partition_key": "Fes",
+    "courier_id": "CRR-01",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 3,
+      "timestamp": "2026-06-09T00:51:00.472978"
+    }
+  },
+  {
+    "event_id": "EVT-1781005860-0825d77b",
+    "order_id": "ORD-20260609-0001",
+    "event_type": "order_delivered",
+    "event_time": "2026-06-09T00:51:00.774763",
+    "partition_key": "Fes",
+    "courier_id": "CRR-01",
+    "amount": 245.0,
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 4,
+      "timestamp": "2026-06-09T00:51:00.774763"
+    }
+  },
+  {
+    "event_id": "EVT-1781005860-3325794a",
+    "order_id": "ORD-20260609-0002",
+    "event_type": "order_created",
+    "event_time": "2026-06-09T00:51:00.978746",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "city": "Casablanca",
+    "zone": "Maarif",
+    "amount": 890.5,
+    "items_count": 5,
+    "status": "created",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 5,
+      "timestamp": "2026-06-09T00:51:00.978746"
+    }
+  },
+  {
+    "event_id": "EVT-1781005861-3ac3dc24",
+    "order_id": "ORD-20260609-0002",
+    "event_type": "order_confirmed",
+    "event_time": "2026-06-09T00:51:01.280836",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 6,
+      "timestamp": "2026-06-09T00:51:01.280836"
+    }
+  },
+  {
+    "event_id": "EVT-1781005861-aea3b443",
+    "order_id": "ORD-20260609-0002",
+    "event_type": "order_prepared",
+    "event_time": "2026-06-09T00:51:01.583605",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 7,
+      "timestamp": "2026-06-09T00:51:01.583605"
+    }
+  },
+  {
+    "event_id": "EVT-1781005861-cc848b81",
+    "order_id": "ORD-20260609-0002",
+    "event_type": "order_dispatched",
+    "event_time": "2026-06-09T00:51:01.886601",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 8,
+      "timestamp": "2026-06-09T00:51:01.886601"
+    }
+  },
+  {
+    "event_id": "EVT-1781005862-ae173385",
+    "order_id": "ORD-20260609-0002",
+    "event_type": "order_delivered",
+    "event_time": "2026-06-09T00:51:02.188728",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "amount": 890.5,
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 9,
+      "timestamp": "2026-06-09T00:51:02.188728"
+    }
+  },
+  {
+    "event_id": "EVT-1781005865-64c066b9",
+    "order_id": "ORD-20260609-0005",
+    "event_type": "order_created",
+    "event_time": "2026-06-09T00:51:05.252938",
+    "partition_key": "Tanger",
+    "courier_id": "CRR-05",
+    "city": "Tanger",
+    "zone": "Centre",
+    "amount": 175.0,
+    "items_count": 1,
+    "status": "created",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 10,
+      "timestamp": "2026-06-09T00:51:05.252938"
+    }
+  },
+  {
+    "event_id": "EVT-1781005865-ca91b379",
+    "order_id": "ORD-20260609-0005",
+    "event_type": "order_confirmed",
+    "event_time": "2026-06-09T00:51:05.556479",
+    "partition_key": "Tanger",
+    "courier_id": "CRR-05",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 11,
+      "timestamp": "2026-06-09T00:51:05.556479"
+    }
+  },
+  {
+    "event_id": "EVT-1781005865-8d825f94",
+    "order_id": "ORD-20260609-0005",
+    "event_type": "order_prepared",
+    "event_time": "2026-06-09T00:51:05.858333",
+    "partition_key": "Tanger",
+    "courier_id": "CRR-05",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 12,
+      "timestamp": "2026-06-09T00:51:05.858333"
+    }
+  },
+  {
+    "event_id": "EVT-1781005866-668a44a5",
+    "order_id": "ORD-20260609-0005",
+    "event_type": "order_dispatched",
+    "event_time": "2026-06-09T00:51:06.160082",
+    "partition_key": "Tanger",
+    "courier_id": "CRR-05",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 13,
+      "timestamp": "2026-06-09T00:51:06.160082"
+    }
+  },
+  {
+    "event_id": "EVT-1781005866-c92baa10",
+    "order_id": "ORD-20260609-0005",
+    "event_type": "delivery_failed",
+    "event_time": "2026-06-09T00:51:06.462465",
+    "partition_key": "Tanger",
+    "failure_reason": "Adresse incorrecte",
+    "courier_id": "CRR-05",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 14,
+      "timestamp": "2026-06-09T00:51:06.462465"
+    }
+  },
+  {
+    "event_id": "EVT-1781005898-a0ab3728",
+    "order_id": "ORD-20260609-0006",
+    "event_type": "order_created",
+    "event_time": "2026-06-09T00:51:38.214689",
+    "partition_key": "Fes",
+    "courier_id": "CRR-01",
+    "city": "Fes",
+    "zone": "Saiss",
+    "amount": 245.0,
+    "items_count": 2,
+    "status": "created",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 15,
+      "timestamp": "2026-06-09T00:51:38.214689"
+    }
+  },
+  {
+    "event_id": "EVT-1781005898-e0128a5c",
+    "order_id": "ORD-20260609-0006",
+    "event_type": "order_confirmed",
+    "event_time": "2026-06-09T00:51:38.517987",
+    "partition_key": "Fes",
+    "courier_id": "CRR-01",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 16,
+      "timestamp": "2026-06-09T00:51:38.517987"
+    }
+  },
+  {
+    "event_id": "EVT-1781005898-98c1de6a",
+    "order_id": "ORD-20260609-0006",
+    "event_type": "order_prepared",
+    "event_time": "2026-06-09T00:51:38.820992",
+    "partition_key": "Fes",
+    "courier_id": "CRR-01",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 17,
+      "timestamp": "2026-06-09T00:51:38.820992"
+    }
+  },
+  {
+    "event_id": "EVT-1781005899-30f81f83",
+    "order_id": "ORD-20260609-0006",
+    "event_type": "order_dispatched",
+    "event_time": "2026-06-09T00:51:39.123386",
+    "partition_key": "Fes",
+    "courier_id": "CRR-01",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 18,
+      "timestamp": "2026-06-09T00:51:39.123386"
+    }
+  },
+  {
+    "event_id": "EVT-1781005899-56852fe3",
+    "order_id": "ORD-20260609-0006",
+    "event_type": "order_delivered",
+    "event_time": "2026-06-09T00:51:39.425100",
+    "partition_key": "Fes",
+    "courier_id": "CRR-01",
+    "amount": 245.0,
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 19,
+      "timestamp": "2026-06-09T00:51:39.425100"
+    }
+  },
+  {
+    "event_id": "EVT-1781005899-adbe461d",
+    "order_id": "ORD-20260609-0007",
+    "event_type": "order_created",
+    "event_time": "2026-06-09T00:51:39.628428",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "city": "Casablanca",
+    "zone": "Maarif",
+    "amount": 890.5,
+    "items_count": 5,
+    "status": "created",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 20,
+      "timestamp": "2026-06-09T00:51:39.628428"
+    }
+  },
+  {
+    "event_id": "EVT-1781005899-5f7b99f5",
+    "order_id": "ORD-20260609-0007",
+    "event_type": "order_confirmed",
+    "event_time": "2026-06-09T00:51:39.931567",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 21,
+      "timestamp": "2026-06-09T00:51:39.931567"
+    }
+  },
+  {
+    "event_id": "EVT-1781005900-7f435a76",
+    "order_id": "ORD-20260609-0007",
+    "event_type": "order_prepared",
+    "event_time": "2026-06-09T00:51:40.233227",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 22,
+      "timestamp": "2026-06-09T00:51:40.233227"
+    }
+  },
+  {
+    "event_id": "EVT-1781005900-a4338a9f",
+    "order_id": "ORD-20260609-0007",
+    "event_type": "order_dispatched",
+    "event_time": "2026-06-09T00:51:40.535871",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 23,
+      "timestamp": "2026-06-09T00:51:40.535871"
+    }
+  },
+  {
+    "event_id": "EVT-1781005900-9b6dc1b0",
+    "order_id": "ORD-20260609-0007",
+    "event_type": "order_delivered",
+    "event_time": "2026-06-09T00:51:40.838631",
+    "partition_key": "Casablanca",
+    "courier_id": "CRR-02",
+    "amount": 890.5,
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 24,
+      "timestamp": "2026-06-09T00:51:40.838631"
+    }
+  },
+  {
+    "event_id": "EVT-1781005903-6b1f3e60",
+    "order_id": "ORD-20260609-0010",
+    "event_type": "order_created",
+    "event_time": "2026-06-09T00:51:43.922164",
+    "partition_key": "Tanger",
+    "courier_id": "CRR-05",
+    "city": "Tanger",
+    "zone": "Centre",
+    "amount": 175.0,
+    "items_count": 1,
+    "status": "created",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 25,
+      "timestamp": "2026-06-09T00:51:43.922164"
+    }
+  },
+  {
+    "event_id": "EVT-1781005904-4c6ea422",
+    "order_id": "ORD-20260609-0010",
+    "event_type": "order_confirmed",
+    "event_time": "2026-06-09T00:51:44.224972",
+    "partition_key": "Tanger",
+    "courier_id": "CRR-05",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 26,
+      "timestamp": "2026-06-09T00:51:44.224972"
+    }
+  },
+  {
+    "event_id": "EVT-1781005904-a4b9cc56",
+    "order_id": "ORD-20260609-0010",
+    "event_type": "order_prepared",
+    "event_time": "2026-06-09T00:51:44.527439",
+    "partition_key": "Tanger",
+    "courier_id": "CRR-05",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 27,
+      "timestamp": "2026-06-09T00:51:44.527439"
+    }
+  },
+  {
+    "event_id": "EVT-1781005904-272ea875",
+    "order_id": "ORD-20260609-0010",
+    "event_type": "order_dispatched",
+    "event_time": "2026-06-09T00:51:44.829713",
+    "partition_key": "Tanger",
+    "courier_id": "CRR-05",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 28,
+      "timestamp": "2026-06-09T00:51:44.829713"
+    }
+  },
+  {
+    "event_id": "EVT-1781005905-c52e0d12",
+    "order_id": "ORD-20260609-0010",
+    "event_type": "delivery_failed",
+    "event_time": "2026-06-09T00:51:45.132523",
+    "partition_key": "Tanger",
+    "failure_reason": "Adresse incorrecte",
+    "courier_id": "CRR-05",
+    "_broker_metadata": {
+      "partition": 3,
+      "offset": 29,
+      "timestamp": "2026-06-09T00:51:45.132523"
+    }
+  }
+]
